@@ -1,0 +1,24 @@
+'''title'''
+print("Welcome to the Expense Tracker!")
+
+# Proti masher income
+income = []
+for month in range(1, 13):
+  income_amount = float(input("Enter your income for month " + str(month) + ": "))
+  income.append(income_amount)
+
+# Proti masher khoroch
+expenses = []
+for month in range(1, 13):
+  expense_amount = float(input("Enter your expenses for month " + str(month) + ": "))
+  expenses.append(expense_amount)
+
+# Hishab
+total_income = sum(income)
+total_expenses = sum(expenses)
+total_savings = total_income - total_expenses
+
+# 1 bochorer total summery
+print("\nTotal Income:", total_income)
+print("Total Expenses:", total_expenses)
+print("Total Savings:", total_savings)
